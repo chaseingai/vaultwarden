@@ -1,9 +1,0 @@
-services:
-  - name: vaultwarden
-    build:
-      dockerfilePath: ./Dockerfile
-    env:
-      ROCKET_PORT: 80
-      VAULTWARDEN_ADMIN_PASSWORD: ${{ secrets.VAULTWARDEN_ADMIN_PASSWORD }}
-      DOMAIN: ${RAILWAY_STATIC_URL}
-    startCommand: "./start.sh"

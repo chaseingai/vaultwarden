@@ -1,0 +1,10 @@
+[build]
+dockerfilePath = "./Dockerfile"
+
+[deploy]
+startCommand = "./start.sh"
+
+[env]
+ROCKET_PORT = "80"
+DOMAIN = "${RAILWAY_STATIC_URL}"
+VAULTWARDEN_ADMIN_PASSWORD = "${{ secrets.VAULTWARDEN_ADMIN_PASSWORD }}"
