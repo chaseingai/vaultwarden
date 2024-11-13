@@ -7,4 +7,5 @@ startCommand = "./start.sh"
 [env]
 ROCKET_PORT = "80"
 DOMAIN = "${RAILWAY_STATIC_URL}"
+DATABASE_URL = "postgresql://${{Postgres.PGUSER}}:${{Postgres.PGPASSWORD}}@${{Postgres.RAILWAY_PRIVATE_DOMAIN}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}"
 VAULTWARDEN_ADMIN_PASSWORD = "${{ secrets.VAULTWARDEN_ADMIN_PASSWORD }}"
