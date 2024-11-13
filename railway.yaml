@@ -1,6 +1,8 @@
 services:
   - name: vaultwarden
     image: vaultwarden/server:latest
+    build:
+      context: .
     env:
       ROCKET_PORT: 80
       ADMIN_TOKEN: $(vaultwarden hash $(openssl rand -base64 32))
@@ -8,4 +10,3 @@ services:
     startCommand: "./start.sh"
     volumes:
       - path: /data
-
