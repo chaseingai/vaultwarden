@@ -1,12 +1,10 @@
 services:
   - name: vaultwarden
-    image: vaultwarden/server:latest
     build:
-      context: .
+      dockerfilePath: ./Dockerfile
     env:
       ROCKET_PORT: 80
       ADMIN_TOKEN: $(vaultwarden hash $(openssl rand -base64 32))
-      I_REALLY_WANT_VOLATILE_STORAGE: "false"
     startCommand: "./start.sh"
     volumes:
       - path: /data
