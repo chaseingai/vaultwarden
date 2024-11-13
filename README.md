@@ -21,6 +21,6 @@ This repository provides an example implementation of [Vaultwarden](https://gith
 > Any changes made through the Admin Panel will be reset upon re-deployment.  
 > **To preserve critical configurations**, store them in the environment variables.
 
-You can configure these settings by creating a `.env` file. Use the provided [.env.template](https://github.com/chaseingai/vaultwarden/blob/main/config/.env.template) as a guide to set up your environment. More configuration info here [/config](https://github.com/chaseingai/vaultwarden/tree/main/config)
+You can configure these settings by creating a `.env` file. Use the provided [.env.template](https://github.com/chaseingai/vaultwarden-railway/blob/main/config/.env.template) as a guide to set up your environment. More configuration info here [/config](https://github.com/chaseingai/vaultwarden-railway/tree/main/config)
 
 --- 
