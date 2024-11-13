@@ -4,9 +4,6 @@ services:
       dockerfilePath: ./Dockerfile
     env:
       ROCKET_PORT: 80
-      ADMIN_TOKEN: $(vaultwarden hash $(openssl rand -base64 32))
+      VAULTWARDEN_ADMIN_PASSWORD: ${{ secrets.VAULTWARDEN_ADMIN_PASSWORD }}
       DOMAIN: ${RAILWAY_STATIC_URL}
-      I_REALLY_WANT_VOLATILE_STORAGE: "false"
     startCommand: "./start.sh"
-    volumes:
-      - path: /data
