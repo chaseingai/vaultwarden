@@ -8,8 +8,8 @@ This guide will help you set up Vaultwarden on Railway with an optimized and sec
 
 ### 1. **ROCKET_PORT**
    - **Description**: Specifies the port Vaultwarden will use.
-   - **Default**: `80`
-   - **Example**: `ROCKET_PORT=80`
+   - **Default**: `8000`
+   - **Example**: `ROCKET_PORT=8000`
 
 ### 2. **I_REALLY_WANT_VOLATILE_STORAGE**
    - **Description**: Controls whether volatile storage is allowed. By setting this to `false`, you will be reminded to configure a persistent volume to avoid data loss.
