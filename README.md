@@ -2,7 +2,7 @@
 
 This repository provides an example implementation of [Vaultwarden](https://github.com/dani-garcia/vaultwarden/wiki), a containerized version of [Bitwarden](https://bitwarden.com) built in Rust.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/vaultwarden)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/template/UlnqDC?referralCode=chaseingai)
 
 ---
 
