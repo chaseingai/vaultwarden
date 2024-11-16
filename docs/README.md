@@ -19,11 +19,7 @@ This guide will help you set up Vaultwarden on Railway with an optimized and sec
 ### 3. **DATABASE_URL**
    - **Description**: Connects Vaultwarden to a PostgreSQL database. This is highly recommended for production deployments. Railway can create this automatically if you add a PostgreSQL plugin.
    - **Format**: `postgresql://user:password@host:port/database`
-   - **Example**: `DATABASE_URL=postgresql://username:password@host:5432/vaultwarden_db`
-
-### 4. **ADMIN_TOKEN**
-   - **Description**: Sets a secure token for accessing the admin panel. It’s best to use an Argon2 hashed string for security.
-   - **Example**: `ADMIN_TOKEN=$(vaultwarden hash $(openssl rand -base64 16))`
+   - **Example**: `DATABASE_URL=postgresql://username:password@host:5432/railway`
 
 ---
 
